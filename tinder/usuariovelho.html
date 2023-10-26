@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder</title>
+    <link rel="stylesheet" href="olduser.css">
+</head>
+<body>
+    <div id="preenchimento"><h1 id="h1login">Login de usuário</h1></div>
+    <div id="alinhar2">
+        <div class="pergunta">
+            <h2 class="enunciado">Qual é o seu nome?</h2>
+            <div class="preenchimento"></div>
+            <input class="botaodedigitar" id="botaodedigitar1"  type="text">
+            <input class="enviar" id="enviar1" type="button" value="Enviar">
+        </div>
+    </div>
+    <div id="alinhar3">
+        <div class="pergunta alinhartamanhocomadivanterior">
+            <h2 class="enunciado">Qual é o seu<br> gênero?</h2>
+            <div class="preenchimento"></div>
+            <input class="botaodedigitar" id="botaodedigitar2"  type="text">
+            <input class="enviar" id="enviar2" type="button" value="Enviar">
+    </div>
+    
+    <a href="#" id="link">
+        <input type="button" class="botãodecontinuar" id="continuando" value="continuar"></a>
+        <a id="curiosidadelink" href="curiosidade.html">
+
+    <script>
+        let usuario;
+        let genero;
+        let input1 = document.getElementById("botaodedigitar1")
+        const enviar1 = document.getElementById("enviar1")
+
+        let input2 = document.getElementById("botaodedigitar2")
+        const enviar2 = document.getElementById("enviar2")
+
+        const continuar = document.getElementById("continuando")
+        let link = document.getElementById("link")
+
+        function obterNome() {
+            usuario = input1.value
+            return localStorage.getItem('nome')
+        }
+        function obtergenero() {
+            genero = input2.value
+            return localStorage.getItem('genero')
+        }
+
+    enviar1.addEventListener("click", function verificarusuario(){
+        if(obterNome() == usuario){
+            console.log("DEU CERTO!")
+        }else{
+            console.log("DEU ERRADO!")
+        }
+    })
+
+    enviar2.addEventListener("click", function verificarusuario(){
+        if(obtergenero() == genero){
+            console.log("DEU CERTO!")
+        }else{
+            console.log("DEU ERRADO!")
+        }
+    })
+
+    continuar.addEventListener("click", function continuee(){
+        if(obterNome() == usuario && obterNome() == genero){
+            link.href("C:\Users\ggezc\OneDrive\Área de Trabalho\vs-code\tinder\novousuário.html")
+        }
+    });
+
+    </script>
+</body>
+</html>

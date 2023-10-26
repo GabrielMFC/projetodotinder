@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder</title>
+    <style>
+        :root{
+    --cor1: #DD4586;
+    --cor2: #F44D71;
+    --cor3: #FD5465;
+    --cor4: #FE6659;
+    --cor5: #FE7350;
+    --cor6: #FF8941;
+}
+body{
+    margin: 0px;
+}
+        h1{
+            color: white;
+            font-family: cursive;
+            text-align: center;
+            background: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4), var(--cor5), var(--cor6));
+            height: 100px;
+            padding-top: 50px;
+        }
+        #preenchimento{
+            width: 100%;
+            position: relative;
+            bottom: 30px;
+            margin: 0px;
+        }
+        #jstxt{
+            text-align: center;
+            font-size: 2em;
+            font-family: cursive;
+            margin-top: 0px;
+            padding: 0px;
+        }
+        .botãodecontinuar{
+    position: relative;
+    left:680px;
+    top: 400px;
+    border: rgba(255, 255, 255, 0.385) ;
+    font-family: cursive;
+    background-color: #a09999;
+    color: white;
+    font-size: 2em;
+    transition: transform 0.4s;
+    border-radius: 0pc 10px 10px;
+    margin: 0px;
+    padding: 0px;
+}
+        .botãodecontinuar:hover{
+    font-family: cursive;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+    background: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4), var(--cor5), var(--cor6));
+}
+    </style>
+</head>
+<body>
+    <div id="preenchimento">
+        <h1>Então esse é você:</h1>
+    </div>
+    <a href="funcionalidade.html"><input type="button" class="botãodecontinuar" value="continuar"></a>
+    <script>
+
+        function obterNome() {
+   return localStorage.getItem('nome');
+}
+
+function obtergenero() {
+    return localStorage.getItem('genero');
+}
+
+function obterfetiche() {
+    return localStorage.getItem('fetiche');
+}
+
+function obterhobby() {
+    return localStorage.getItem('hobby');
+}
+
+document.write('<p id="jstxt">' + "Seu nome é, " +obterNome()+ ", Seu fetiche é "+ obterfetiche() + ", E seu hobby é "+ obterhobby()+ "." + '</p>' )
+    </script>
+</body>
+</html>

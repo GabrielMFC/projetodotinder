@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder</title>
+    <link rel="stylesheet" href="funcao.css">
+</head>
+<body>
+<div id="preenchimento">
+    <h1 id="Tindertitle">Tinder</h1>
+</div>
+    <img id="tinderlogo" src="tindersus2-removebg-previewtinder.png" alt="Tinder logo">
+
+    <div id="fototeste">
+        <img class="imgdocirculo" id="img1" src="tonim_img.png" alt="dormindo">
+        <div class="alinharnaimg">
+            <h2 class="h2daimg" id="nome">Tonim</h2>
+            <p class="p2daimg" id="genero">Genêro: <span>Masculino</span></p>
+            <p class="p2daimg" id="hoby">Hobby: Passar maquete </p>
+        </div>
+
+            <div class="inffake" id="mikaela">
+                <h2 class="h2daimg" id="nome2">Tonim</h2>
+                <p class="p2daimg" id="genero2">Genêro: <span>Masculino</span></p>
+                <p class="p2daimg" id="hoby2">Hobby: Fazer discurso </p>
+            </div>
+
+            <div id="posicionaropinioes">
+                <p  id="opiniao0"></p>
+
+                <p id="opiniao1"></p>
+
+            </div>
+
+            <div id="posicionaropinioes2">
+                <p   id="opiniaonegativa1"></p>
+
+                <p  id="opiniaonegativa2"></p>
+
+            </div>
+    </div>
+
+        <a href="index.html" id="ain_dex">
+            <p id="plogout">Log out</p>
+        </a>
+
+    <div id="botoesdeinteragir">
+<img id="likeimg" class="fix" src="botaodecoraçãopreto.png" alt="icone de coração">
+
+        <div id="rejeitar" class="fix">X</div>
+
+        <img id="setaimg" class="fix" src="setatrue.png" alt="botão de seta">
+    </div>
+
+    <script>
+        let likes = document.getElementById("likeimg")
+        let dontlikes = document.getElementById("rejeitar")
+        let likevalor = undefined
+        let dontlikevalor = undefined
+
+        let dontlikemika = document.getElementById("rejeitar")
+        let likemika = document.getElementById("likeimg")
+
+        let likemikavalor = undefined
+        let dontlikemikavalor = undefined
+
+        let opiniao0 = document.getElementById("opiniao0")
+        let opiniao1 = document.getElementById("opiniao1")
+        let opiniao2 = document.getElementById("opiniao2")
+        const botaodecoracao = document.getElementById("likeimg")
+        const botaodex = document.getElementById("rejeitar")
+        let imgs = document.getElementById("img1")
+        const botaodepassar = document.getElementById("setaimg")
+        const botaodepassar2 = document.getElementById("setaimg")
+        let nome = document.getElementById("nome")
+        let genero = document.getElementById("genero")
+        let hobby = document.getElementById("hoby")
+        let mika = document.getElementById("mikaela")
+        let nome2 = document.getElementById("nome2")
+        let genero2 = document.getElementById("genero2")
+        let hoby2 = document.getElementById("hoby2")
+        let travamentodefuncao0 = 0
+        let travamentodefuncao = 1
+        let travamentodefuncao2 = 9
+        let travamentodefuncao3 = 9
+
+        dontlikes.addEventListener("mouseover", function dontliketrue() { 
+            if(imgs.src.endsWith("tonim_img.png")) {
+            dontlikevalor = true
+            likevalor = false
+            }
+        });
+
+        likes.addEventListener("mouseover", function liketrue() {
+            if(imgs.src.endsWith("tonim_img.png")) {
+            likevalor = true 
+            dontlikevalor = false
+            }
+        });
+        dontlikemika.addEventListener("mouseover", 
+        function dontlikemikatrue() {
+            if(imgs.src.endsWith("micaelafugindodomurilo.jpeg"))
+            dontlikemikavalor = true
+        })
+        likemika.addEventListener("mouseover", 
+        function likemikatrue() {
+            if(imgs.src.endsWith("micaelafugindodomurilo.jpeg"))
+            likemikavalor = true 
+        })
+
+        botaodepassar.addEventListener("click", function(){
+            if(travamentodefuncao0 == 5) {
+                trocarimgemudarainfdousuario2()
+            }
+            else{
+                travamentodefuncao0 = 5
+                trocarimgemudarainfdousuario()
+            }
+});
+
+        function trocarimgemudarainfdousuario() {
+            imgs.src = "micaelafugindodomurilo.jpeg"
+            nome.innerHTML = "Murilo"
+            hoby.innerHTML = "Hobby: Correr atras da Mikaela."
+            mika.className = "alinharnaimg2"
+            nome2.innerHTML = "Mikaela"
+            genero2.innerHTML = "Genêro: Feminino"
+            hoby2.innerHTML = "Hobby: Fugir do Murilo"
+        }
+        function trocarimgemudarainfdousuario2() {
+            imgs.src = "helderimgtrue.png"
+            nome.innerHTML = "Hélder"
+            genero.innerHTML = "Genêro: Masculino"
+            hoby.innerHTML = "Hobby: Marcar x na prova de verdadeiro ou falso."
+            mika.className = "inffake"
+        }
+
+        function trocarimgemudarainfdousuario3() {
+            imgs.src = "nathan.jpg"
+            nome.innerHTML = "Nathan"
+            genero.innerHTML = "Genêro: Masculino?"
+            hoby.innerHTML = "HObby: Trabalhar."
+            mika.className = "inffake"
+        }
+        function like2() {
+        opiniao1.innerHTML = "You liked Mikaela and  Murilo."
+            imgs.src = "helderimgtrue.png"
+            opiniao1.classList = "opiniaoclasse"
+        }
+        function like1() {
+            opiniao0.innerHTML = "You liked Tonim"
+            imgs.src = "micaelafugindodomurilo.jpeg"
+            nome.innerHTML = "Murilo"
+            hoby.innerHTML = "Hobby: Correr atras da Mikaela."
+            nome2.innerHTML = "Mikaela"
+            genero2.innerHTML = "Genêro: Feminino"
+            hoby2.innerHTML = "Hobby: Fugir do Murilo"
+            opiniao0.classList = "opiniaoclasse"
+        }
+
+        function dontlike2() {
+            imgs.src = "helderimgtrue.png"
+            opiniaonegativa2.innerHTML = "You didn't like Mikaela and Murilo"
+            opiniaonegativa2.classList = "opiniaonegativa"
+        }
+        function dontlike1() {
+            opiniaonegativa1.innerHTML = "You didn't like Tonim."
+            imgs.src = "micaelafugindodomurilo.jpeg"
+            opiniaonegativa1.classList = "opiniaonegativa"
+       }
+       
+       botaodecoracao.addEventListener("click", function() {
+    if(likevalor == true && imgs.src.endsWith("tonim_img.png")) {
+        like1();
+    }else{
+        like2();
+    }
+})
+
+botaodex.addEventListener("click", function() {
+    if(dontlikevalor == true && imgs.src.endsWith("tonim_img.png")){
+        dontlike1();
+    }else{
+        dontlike2();
+    }
+})
+    </script>
+</body>
+</html>
