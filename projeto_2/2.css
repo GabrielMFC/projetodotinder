@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@media screen and (max-width:800px){
+     .link{
+        font-size: 19px;
+    }}
+    @media screen and (max-width:800px){
+        .artigo1{
+           font-size: 15px;
+           margin: auto;
+           text-align: justify;
+           width: 90%;
+           height: 570px
+       }
+}
+:root{
+    --cinzaforte: #4D4D4D;
+    --cinzamedio: #808080;
+    --cinzaclaro: #808080;
+    --cinzadolink:#e1e2d8;
+}
+body{
+    background-color: #CCCCCC;
+}
+#titulo{
+    text-align: center;
+    font-size: 4em;
+}
+#pmain{
+    color: white;
+    text-align: center;
+    margin-top:-50px;
+    padding-bottom: 40px;
+}
+nav{
+   height:50px ;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    white-space: nowrap;
+/*tela pequena font size 19*/
+}
+main a:hover{
+    text-decoration: underline;
+    color: cyan;
+}
+header{
+    background-color: #4D4D4D;
+    margin: auto;
+    margin-top: -53px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+article{
+    background-color: white;
+    margin: auto;
+    margin-left:  200px;
+    margin-right: 200px;
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    border-radius: 0px 10px 10px 10px;
+    height: 370px
+}
+article > p{  
+    text-indent: 30px;
+}
+#p1{
+    text-align: justify;
+    margin-right: 10px;
+}
+#linkedp{
+    color: black;
+    font-size: 0.5em;
+    margin-top: -20px;
+    font-weight: bold;
+}
+/*Jogos 
+  mais 
+  populares
+  */
+  

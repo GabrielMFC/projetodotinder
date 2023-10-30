@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+#corpo{
+    margin: auto;
+    background-color: black;
+    height: 650px;
+    width: 400px;
+    margin-top: 45px;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+#camera{
+    width: 1%;
+    height: 1%;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 0.01px;
+    left: 200px;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+#tela{
+    background-color: lightgray;
+    width: 380px;
+    height: 630px;
+    border-radius: 15px;
+    margin: auto;
+    z-index: 2;
+}
+.alllink{
+    text-decoration: none;
+}
+.apps{
+    max-width: 30%;
+}
+#Face{
+    background-color: #1877f2;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 10px;
+    left: 60px;
+    border-radius: 10px;
+}
+#pface{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+}
+#Face:hover{
+   transform: scale(1.1);
+}
+
+#yt{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 1px;
+    left: 250px;
+    bottom: 50px;
+    border-radius: 10px;
+}
+#pyt{
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+}
+#odeioimg{
+    text-align: center;
+}
+img{
+    width: 10px;
+    height: 30px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    right: 0.05px;
+}
+#yt:hover{
+    transform: scale(1.1);
+}
+
+#alinharyt{
+   position: absolute;
+   top:75px;
+}
+#insta{
+    background-color: aqua;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(to bottom,#7F3BB2,
+    #934BC7,#CB2563,#F97B01,#F9C901
+    );
+    position: relative;
+    top: 58.9px;
+    left: 60px;
+}
+#instaimg{
+    text-align: center;
+}
+#pinsta{
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+}
+#insta:hover{
+    transform: scale(1.1);
+}
+#chat{
+    background-color: #05ab83;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 0.1px;
+    left: 250px;
+    bottom: 51px;
+    border-radius: 10px;
+}
+#pchat{
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+}
+#chatimg{
+    text-align: center;
+}
+#chat:hover{
+    transform: scale(1.1);
+}
+.g{
+    color: #1877f2;
+}
+#o1{
+    color:  #E94335;
+}
+#o2{
+    color: #F9C901;
+}
+#l{
+    color: #05ab83;
+}
+#e{
+    color: #E94335;
+}
+#google{
+    position: absolute;
+    left: 100px;
+    top: 270px;
+
+}
+#hgoogle{
+    font-size: 50px;
+}
+#frase{
+    border-radius: 10px;
+}
+#on{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 570px;
+    left: 166px;
+    background-color: black;
+    border-radius: 50%;
+}
+#pon{
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+}
+#onimg{
+    text-align: center;
+}
+#on:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+#titulo{
+    font-weight: bold;
+    
+}
+body{
+    background-color: #84e1ad;
+}
+main{
+    text-align: center;
+    background-color: #37c576;
+    color: rgb(230, 225, 225);
+    margin-top: -21px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+nav{
+    text-align: left;
+    margin-left: 25px;
+}
+nav > a {
+    color: rgb(230, 225, 225);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+article{
+    background-color: white;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -19px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#imgv1{
+   height: 200px;
+   width: 500px;
+}
+.alinhar{
+    text-align: center;
+    
+}
+#imgirina{
+    height: 200px;
+    width: 200px; 
+   
+}
+#imgandrohumano{
+    height: 200px;
+    width: 500px;
+}
+iframe{
+    background-color: darkgreen;
+}
+#hlista{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #2fa866;
+    color: rgb(230, 225, 225);
+    border-radius: 10px 10px 0% 0%;
+}
+#plista{
+    background-color:#37c577d9;
+    margin-top: -20px
+}
+.verification{
+    list-style-type: none;
+}
+.verification li::before{
+    content: "\2713";
+}
+#listaleft{
+    background-color:#37c577d9;
+    margin-top: -21px;
+    padding-top: 5px;
+    text-align: left;
+}
+#listaright{
+    text-align: right;
+    
+}
+#colorido {
+    background-color: darkgreen;
+    
+}

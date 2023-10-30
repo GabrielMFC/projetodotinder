@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de link</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        body{
+            background-color: lightgray;
+        }
+        h1{
+            font-size: 3em;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        h2{
+            font-size: 4em;
+            text-align: center;
+            color: white;
+        }
+        #seta{
+            
+            position: relative;
+            top: -65px;
+        }
+        #input1{
+            position: relative;
+            top: -115px;
+            border-radius: 10px;
+        }
+        #input2{
+            position: relative;
+            top: -110px;
+            width: 20px;
+            border-radius: 10px;
+            background-color: greenyellow;
+        }
+        #box{
+            background-color: black;
+            width: 600px;
+            margin: auto;
+            border-radius: 0px 20px 20px 20px;
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+        <div id="box">
+            <h1>Digite uma palavra nesse input para ver seu significado</h1>
+            <div id="seta">
+                <h2>&#x2B07 &#xFE0F</h2>
+            </div>
+            <div>
+                <input id="input1" type="text">
+                <input id="input2" type="button">
+            </div>
+        </div>
+    <script>
+        var digitar = document.getElementById("input1")
+        var buscar = document.getElementById("input2")
+        buscar.addEventListener("click", fnbuscar)
+        function fnbuscar(){
+            var value = digitar.value
+            window.location="https://www.meudicionario.org/"+value
+        }
+    </script>
+</body>
+</html>

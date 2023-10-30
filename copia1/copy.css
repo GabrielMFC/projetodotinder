@@ -1,0 +1,296 @@
+@charset  "UTF-8";
+*{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+body{
+    background-color: #F7F3F5;
+    cursor:url('cursor-de-setapngtamanhocerto.png');
+}
+main{
+    background-color: white;
+}
+#iconi{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+.pmenu{
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+    background-size: 40px 40px;
+    border-radius: 10px;
+    position: relative;
+    top: 40px;
+}
+a{
+    text-decoration: none;
+}
+.pmenu:hover{
+    text-decoration: underline;
+    
+}
+#alinhar{
+    width: 1000px;
+    position: relative;
+    bottom: 130px;
+    left: 330px;
+    background-color: #ffff;
+}
+.fix{
+    display: inline-block;
+    padding-right: 50px;
+}
+#imgespeto{
+    display: inline-block;
+    width: 100%;
+    height: 328px;
+}
+#titulo{
+    width: 30%;
+    display: block;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    bottom: 270px;
+    left: 900px;
+}
+.pnomod{
+    width: 30%;
+    color: white;
+    position: relative;
+    bottom: 200px;
+    left: 900px;
+}
+#locationicon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 178px;
+    left: 880px;
+}
+#alinhar2{
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+.okce{
+    font-size: 1.5em;
+    position: relative;
+    bottom: 5px;
+}
+.pheader{
+    color: black;
+    font-weight: bold;
+}
+.fix2{
+    display: inline-block;
+    padding-right: 150px;
+}
+.okce:hover p{
+    color: red;
+}
+#preços{
+    height: 800px;
+}
+#anunciodospreços{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin-bottom: 40px;
+}
+#fix3{
+    display: inline-block;
+    padding: 50px;
+}
+.fix3 > img{
+    width:200px;
+    height:269px;
+}
+.fix3 > p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+#alinhar3{
+    text-align: center;
+    height: 800px;
+}
+.tioroimg{
+    height: 269px;
+    width: 200px;
+    border-radius: 10px;
+}
+#carneecoxa{
+    position: relative;
+    right: 300px;
+}
+#linguiçaecoração{
+    position: relative;
+    left: 0px;
+    bottom: 827px;
+    display: inline-block;
+}
+#espacamentodacarne{
+    padding-bottom: 60px;
+}
+#espacamentodocoracao{
+    padding-bottom: 60px;
+}
+#espacamentodatulipa{
+    padding-bottom: 60px;
+}
+#tulipaekafta{
+    width: 100px;
+    position: relative;
+    bottom: 1653px;
+    left: 950px;
+}
+.ptulipa{
+    width: 150px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    position: relative;
+    left: 23px;
+}
+.h2dotulipaelinguiça{
+    position: relative;
+    left: 45px;
+}
+#quemexperimenta{
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 35px;
+    right: 300px;
+    margin-top: 150px;
+}
+#tiposdechurrascos{
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+#dados{
+    display: inline-block;
+}
+.estatistica{
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3.7em;
+}
+.fix4{
+    display: inline-block;
+    padding-right: 86px;
+}
+#dados{
+    position: relative;
+    top: 100px;
+    left: 400px;
+}
+#pdebaixodonumero{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 405px;
+}
+.fix5{
+    display: inline-block;
+    padding-right: 86px;
+}
+.inf{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#sabor{
+    position: relative;
+    left: 20px;
+}
+#loja{
+    position: relative;
+    left: 40px;
+}
+#saibasobreomelhorchurrasco{
+    position: relative;
+    top: 200px;
+    text-align: center;
+    padding-top: 50px;
+}
+#saibasobreomelhorchurrasco > p{
+    color: red;
+}
+.fix6{
+    display: inline-block;
+}
+#cidadesimg{
+    text-align: center;
+    padding-right:0px ;
+}
+#cidadesimg2{
+    text-align: center;
+    padding-right:50px ;
+}
+.fix7{
+    display: inline-block;
+}
+.imgdosaibasobretudo{
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 300px;
+    z-index: 0;
+}
+.pembaixodaimgdosaibasobretudo{
+    display: block;
+    z-index: 1;
+    color: black;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-top: 25px;
+    position: relative;
+    top: 300px;
+}
+.date{
+    color:#adadad;
+    position: relative;
+    top: 302px;
+}
+.leiamais{
+    position: relative;
+    top: 325px;
+    color: red;
+}
+#p2cidadesimg2{
+    position: relative;
+    left: 15px;
+}
+#p3cidadesimg2{
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 14px;
+    position: relative;
+    left: 40px;
+
+}
+.correcaodop1{
+    font-size: 20;
+}
+.correcaodop{
+    font-size: 20px;
+}
