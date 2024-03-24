@@ -57,10 +57,12 @@ button{
 button:hover{
   background-color: pink;
 }
-.remove{
-  width: 0%;
-  height: 0%;
-  z-index: -2;
+.ativado{
+  background-color: red;
+  width: 30vh;
+  height: 30vh;
   position: absolute;
-  font-size: 0%;
+}
+.remove{
+  display: none;
 }

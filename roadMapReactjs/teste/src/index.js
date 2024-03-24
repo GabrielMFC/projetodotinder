@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Componente1 from './componente1';
+import TelaDeLogin from './TelaDeLogin.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Componente1/>
+    <TelaDeLogin/>
   </React.StrictMode>
 );
